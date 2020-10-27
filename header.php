@@ -10,9 +10,7 @@
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Cases</li>
-                    <li>Contact</li>
+                    <li>Header</li>
                 </ul>
             </nav>
         </header>
