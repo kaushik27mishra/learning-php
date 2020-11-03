@@ -1,19 +1,20 @@
 <?php
     include_once 'header.php';
-    include 'includes/dbh.inc.php';
 ?>
 
-<?php
-    $sql = "SELECT * FROM users;";
-    $result = mysqli_query($conn,$sql);
-    $resultCheck = mysqli_num_rows($result);
-
-    if($resultCheck>0) {
-        while($row = mysqli_fetch_assoc($result)) {
-            echo '<p>'.$row['user_first'].'</p>';        
-        }
-    }
-?>
+<form action="includes/signup.inc.php" method="POST">
+    <input type="text" name="first" placeholder="First Name">
+    <br>
+    <input type="text" name="last" placeholder="Last Name">
+    <br>
+    <input type="text" name="email" placeholder="Email">
+    <br>
+    <input type="text" name="uid" placeholder="UID">
+    <br>
+    <input type="password" name="password" placeholder="password">
+    <br>
+    <button type="submit" name="submit">Sign Up</button>
+</form>
         <p>Home</p>
     </body>
 </html>
